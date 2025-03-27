@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM oven/bun:latest
 
 WORKDIR /app
 
@@ -6,6 +6,6 @@ COPY . .
 
 RUN bun install
 
-EXPOSE 3000
+EXPOSE 5173
 
 CMD [ "bun", "run", "dev" ]
